@@ -1,0 +1,39 @@
+PASS A*: empty grid shortest Manhattan path
+PASS A*: unreachable goal
+PASS A*: start equals goal
+PASS A*: optimality against independent BFS on 80 seeded maps
+PASS Hill: local maximum trap
+PASS Hill: alternative start reaches global maximum
+PASS Hill: plateau and negative numbers
+PASS Hill: invalid input rejected
+PASS Minimax: takes immediate winning move
+PASS Minimax: blocks immediate threat
+PASS Minimax: preserves input board
+  verified terminal human-play branches: 569
+PASS Minimax: never loses against all possible human moves
+PASS BFS: exact shortest path and no-path handling
+PASS Generated maps: reproducible seed, protected endpoints
+PASS A* and BFS: agreement over 100 generated maps
+PASS Random Restart: deterministic results and genuine best run
+PASS Random Restart: invalid count rejected
+PASS Random Restart: limited restarts cannot promise global maximum
+PASS Minimax medium: limited search, win and block
+PASS Minimax tree: root MAX scores equal reply MIN values
+  verified AI-first terminal branches: 73
+PASS Minimax AI-first: never loses for all human responses
+PASS DFS: depth-first order and non-shortest route example
+PASS DFS: unreachable, blocked endpoint and identical endpoints
+PASS DFS: 100 maps preserve reachability and return legal cycle-free paths
+24 tests passed.
+PASS Application initializes all panels without errors
+PASS A*: step, backward, completion, and comparison
+PASS BFS selection resets search and completes
+PASS Random maps repeat seed, clear old comparison, reject bad seed
+PASS Hill: history, local max, alternative start, preset and back
+PASS Hill: restart table, selecting a run, invalid count/input
+PASS Minimax: human move, AI reply, decision tree and undo
+PASS Minimax: AI starts and undo preserves opening
+PASS Difficulty levels restart game and label random mode honestly
+PASS Tabs switch panels
+PASS DFS controls and status do not promise shortest route
+11 interface integration tests passed (jsdom; no visual browser check).
